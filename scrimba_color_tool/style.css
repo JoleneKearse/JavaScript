@@ -208,6 +208,49 @@ button {
     }
 }
 
+@media (orientation: landscape) {
+    .container {
+        gap: .5em;
+        padding: .5em 1em;
+    }
+    .controls {
+        display: flex;
+        gap: .25em;
+    }
+    input[type=text] {
+        height: 1.5em;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        height: 1em;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        height: 1.25em;
+        width: 1.25em;
+        margin-top: -3px;
+    }
+    .toggle {
+        /* flex-direction: column; */
+        gap: .3em;
+        border: solid 1px #000;
+        border-radius: 20px;
+        padding: 5px;
+        margin: auto;
+    }
+    .color-display {
+        display: flex;
+        gap: .25em;
+    }
+    .results {
+        flex-grow: calc(90% / 100%);
+    }
+    .block {
+        display: block;
+    }
+    #inputColor {
+        max-width: 25%;
+    }
+}
+
 /* ------------- Accessibility ------------- */
 
 input:focus,
