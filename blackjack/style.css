@@ -49,13 +49,12 @@ h1 {
 
 /* -------- LAYOUT -------- */
 body {
-    background-image: url("cat-blackjack.png"), radial-gradient(circle at top left, #004700 15%, #005e01 30%, #2A9134);
+    background-image: url("cat-blackjack-mobile.png"), radial-gradient(circle at top left, #004700 15%, #005e01 30%, #2A9134);
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
-    
 }
 
 .container {
@@ -83,4 +82,20 @@ button {
     color: var(--btn-color);
     font-weight: 400;
     font-size: clamp(2rem, 2.5rem, 4rem);
+    cursor: pointer;
+}
+
+button:focus,
+button:hover {
+    background-color: var(--btn-color);
+    color: var(--btn-background);
+}
+
+button:active {
+  outline: none;
+  box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
+  -webkit-box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
+  -moz-box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
+  margin: 2px 5px 1px 5px;
+  transition: 100ms;
 }
