@@ -1,0 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: repeating-conic-gradient(#424BFC 0 15deg, #0B13B0 15deg 30deg);
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    margin: auto;
+    padding: 2em;
+}
