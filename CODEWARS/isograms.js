@@ -8,6 +8,3 @@ function isIsogram(str) {
     //   return true if same length
     return casedArr.length == uniqueSet.length;
 }
-
-
-
