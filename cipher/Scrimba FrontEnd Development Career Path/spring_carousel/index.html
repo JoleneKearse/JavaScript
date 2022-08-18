@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ribeye&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc831cd623.js" crossorigin="anonymous"></script>
+    <title>Spring is Coming</title>
+</head>
+<body>
+    <h1>Spring is Coming</h1>
+
+    <main>
+        <div class="carousel">
+            <div class="carousel-item carousel-item-visible">
+                <img src="images/1.png" alt="A squirrel amidst barely budding branches in the glooming" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.png" alt="Leaves really beginning to come in, framed around the moon" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.png" alt="Bright green leaves sprouting with trunks as background" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/4.png" alt="Lilac blooms sunlit from below with darker green leaves in the background" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/5.png" alt="Small white flowers blooming on a crab apple tree" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/6.png" alt="Vibrant yellow Forsythia with green sprouts" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/7.png" alt="Forsythia branches against a bright green lawn" class="depth">
+            </div>
+            <div class="carousel-item">
+                <img src="images/8.png" alt="Vibrant colours with red maple branches sweeping towards a yellow forsythia bush with dark green leaves in the background" class="depth">
+            </div>
+        </div>
+
+        <div class="carousel-actions">
+            <button id="carousel-btn-prev"><i class="fa-solid fa-chevron-left" aria-label="Previous slide"></i></button>
+            <button id="carousel-btn-next"><i class="fa-solid fa-chevron-right" aria-label="Next slide"></i></button>
+        </div>
+
+    </main>
+
+    <section>
+        <div class="slide-indicator">
+            <span class="indicator indicator-active">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+            <span class="indicator">_</span>
+        </div>
+
+        <div class="toggle">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label" id="checkbox-label">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

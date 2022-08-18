@@ -1,0 +1,87 @@
+/* ****** CUSTOM PROPERTIES ****** */
+:root {
+    --clr-dark: #242333;
+    --clr-light: #FFEFCA;
+    --clr-accent: #F37B67;
+}
+
+/* ****** RESET****** */
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.25rem;
+    font-family: 'Acme', sans-serif;;
+    line-height: 1.2;
+    background: #1D2B64;
+    background: -webkit-linear-gradient(to right, #1D2B64, #F8CDDA);
+    background: linear-gradient(to right, #1D2B64, #F8CDDA);
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ****** TYPOGRAPHY ****** */
+h1 {
+    text-align: center;
+    font-size: clamp(1.5em, 2.5em, 4.5em);
+    font-family: 'Sansita Swashed', cursive;
+    color: var(--clr-dark);
+}
+
+.score {
+    color: var(--clr-light);
+    font-size: clamp(1.1em, 1.75em, 2.3em);
+}
+
+#scoreValue,
+#result {
+    color: var(--clr-accent);
+    font-size: clamp(1.25em, 2em, 2.6em);
+    text-shadow: 3px 3px 2px #23232366;
+    text-align: center;
+}
+
+#scoreValue {
+    padding-left: .5em;
+}
+
+/* ****** COMPONENTS ****** */
+.board {
+    width: 44em;
+    height: 26em;
+    padding: 2em;
+    display: grid;
+    grid-gap: 2em;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    width: 6em;
+    height: 10em;
+    border-radius: 20px;
+    background: #ff00cc;
+    background: -webkit-linear-gradient(to right, #333399, #ff00cc);
+    background: linear-gradient(to right, #333399, #ff00cc);
+    box-shadow: 3px 3px 10px #23232366;
+}
+
+.results-box {
+    width: 40vw;
+    margin-inline: auto;
+    display: flex;
+    gap: 4em;
+    justify-content: center;
+}

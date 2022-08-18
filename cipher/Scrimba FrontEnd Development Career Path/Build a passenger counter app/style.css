@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-image: url("subway.jpg");
+  background-color: #3c3c3c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 1.25rem;
+  color: #ffffe4;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+}
+
+h1,
+button {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.counter {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 0 0 0.25em 0;
+}
+
+.container {
+  max-width: 50%;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.1 em 0.25em;
+}
+
+button:first-of-type {
+  margin-bottom: 1.5em;
+}
+
+#increment-btn {
+  background-color: hsl(120, 73%, 38%);
+}
+
+#save-btn {
+  background-color: hsl(0, 73%, 38%);
+}
+
+.previous {
+  margin-bottom: 2em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle&family=Mochiy+Pop+P+One&family=Oswald:wght@400;700&family=Source+Sans+Pro:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blackjack</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Blackjack</h1>
+      <p id="message-el" class="message">Ready to play?</p>
+      <p id="cards-el">Cards =></p>
+      <p id="sum-el">Sum =></p>
+      <div class="btn-box">
+        <button id="start-game-btn" onclick="startGame()">START GAME</button>
+        <button id="new-card-btn" onclick="newCard()">NEW CARD</button>
+      </div>
+      <div id="the-ace">
+        <p class="ace-choice">
+          The Ace can either be 1 or 11 points, which do you choose?
+        </p>
+        <div class="ace-box">
+          <button id="ace1" onclick="subtract10()">1</button>
+          <button id="ace11" onclick="keep11()">11</button>
+        </div>
+      </div>
+      <button id="reset-btn" onclick="reset()">RESET</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

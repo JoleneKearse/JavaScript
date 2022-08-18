@@ -1,6 +1,6 @@
 const computerChoiceDisplay = document.getElementById("computerChoice");
 const userChoiceDisplay = document.getElementById("userChoice");
-const resultDisplay = document.getElementById("result");
+const resultDisplay = document.getElementById("resultMsg");
 const possibleChoices = document.querySelectorAll("button");
 let userChoice;
 let computerChoice;
@@ -17,11 +17,11 @@ function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1;
 
     if (randomNumber === 1) {
-        computerChoice = "rock✊";
+        computerChoice = "✊";
     } else if (randomNumber === 2) {
-        computerChoice = "paper✋";
+        computerChoice = "✋";
     } else {
-        computerChoice = "scissors✌️";
+        computerChoice = "✌️";
     };
     computerChoiceDisplay.innerHTML = computerChoice;
 };
@@ -29,17 +29,17 @@ function generateComputerChoice() {
 function getResult() {
     if (computerChoice === userChoice) {
         result = "It's a Tie 🤷";
-    } else if (computerChoice === "rock✊" && userChoice === "paper✋") {
+    } else if (computerChoice === "✊" && userChoice === "✋") {
         result = "You Win! 🥳";
-    } else if (computerChoice === "rock✊" && userChoice === "scissors✌️") {
+    } else if (computerChoice === "✊" && userChoice === "✌️") {
         result = "You Lose! 😰";
-    } else if (computerChoice === "paper✋" && userChoice === "scissors✌️") {
+    } else if (computerChoice === "✋" && userChoice === "✌️") {
         result = "You Win! 🥳";
-    } else if (computerChoice === "paper✋" && userChoice === "rock✊") {
+    } else if (computerChoice === "✋" && userChoice === "✊") {
         result = "You Lose! 😰";
-    } else if (computerChoice === "scissors✌️" && userChoice === "rock✊") {
+    } else if (computerChoice === "✌️" && userChoice === "✊") {
         result = "You Win! 🥳";
-    } else if (computerChoice === "scissors✌️" && userChoice === "paper✋") {
+    } else if (computerChoice === "✌️" && userChoice === "✋") {
         result = "You Lose! 😰";
     };
     resultDisplay.innerHTML = result;

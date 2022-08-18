@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jolene Kearse">
+    <meta name="description" content="Final project of the Scrimba Frontend Career Path Module 6: Responsive Design. This BBQ Splash Page is fully responsive using clamp() & media queries. Also uses JavaScript to display a confirmation & has a CSS media query for prefers-color-scheme: dark">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>BBQ Splash Page</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="desktop-flex">
+                <div class="hero flex">
+                    <div class="hero-spacing flex">
+                        <h1 class="site-title">Learn how to make <span class="emphasis">the best BBQ ribs</span> in town</h1>
+                        <h2 class="accent-txt uppercase hero-cta">Join us for this live webinar</h2>
+                    </div>
+                    <p class="accent-txt uppercase deco-txt border-gradient">Mouthwateringly delicious</p>
+                </div> <!-- hero -->
+                <div id="signUpComplete" class="form flex">
+                    <h2 id="congratsMsg" class="form-title">Become a BBQ master!</h2>
+                    <p id="congratsStatement" class="form-cta accent-txt uppercase">Register Today</p>
+                    <p class="copy">BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
+                    <form id="emailCollector" class="flex" action="#" method="post">
+                        <input type="text" name="name" id="name" aria-label="name" placeholder="first name" required>
+                        <input type="text" name="email" id="email" aria-label="email" placeholder="email" required>
+                        <button type="submit" class="uppercase cta-btn">Register</button>
+                    </form>
+                    <p class="small">We'll never share your information without your permission</p>
+                </div>
+            </div> <!-- close form -->
+        </div> <!-- close container -->
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

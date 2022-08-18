@@ -1,0 +1,80 @@
+/* ---------- CUSTOM PROPERTIES ---------- */
+:root {
+    --clr-100: #E5E6E4;
+    --clr-200: #F8F4A6;
+    --clr-300: #CC4BC2;
+    --clr-400: #FF8360;
+    --clr-500: #97423A;
+    --clr-600: #2E0014;
+}
+
+/* ---------- RESET ---------- */
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font: inherit;
+    /* vertical-align: baseline; */
+}
+
+html {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+body {
+    --bg: linear-gradient(45deg, var(--clr-400), var(--clr-600));
+    min-height: 100vh;
+    width: 100%;
+    background: var(var(--clr-600));
+    background-image: var(--bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.grid {
+    width: 200px;
+    height: 200px;
+    border: 1px solid var(--clr-200);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+    /* border: 1rem solid white;
+    box-sizing: border-box; */
+}
+
+.snake {
+    --clr-300: #CC4BC2;
+    background: blue;
+}
+
+.apple {
+    background: var(--clr-400);
+    border-radius: 20px;
+}
+
+.popup {
+    background: var(--clr-100);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

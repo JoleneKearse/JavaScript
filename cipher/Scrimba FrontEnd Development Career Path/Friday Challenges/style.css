@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    background-color: #FFFFF3;
+    color: #253D5B;
+}
+
+header {
+    background-color: #109648;
+    color: #253D5B;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+h2 {
+    color: #3E92CC;
+    font-size: 32px;
+    text-align: center;
+}
+
+main {
+    background-color: #ECA72C;
+    color: #0A5C2C;
+    padding: 10px 0;
+    
+}
+
+.list {
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+.numbered {
+    font-weight: bold;
+    text-align: center;
+    list-style: inside;
+}
+
+.insideLists {
+    font-weight: normal;
+    list-style-position: 
+}
+
+.code {
+    color: #253D5B;
+    font-size: 20px;
+    text-align: center;
+    background-color: #FFFFF3;
+    width: 400px;
+    margin: 10px auto;
+    padding: 5px;
+}

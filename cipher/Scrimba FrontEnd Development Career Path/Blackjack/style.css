@@ -1,0 +1,126 @@
+/* ---------  RESET  --------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+/* -------- TYPOGRAPHY  -------- */
+body {
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: clamp(1rem, 1.5rem, 2.3rem);
+  color: #301934;
+}
+
+.message {
+  font-style: italic;
+}
+
+.message,
+.ace-choice {
+  color: #fffd82;
+}
+
+.ace-choice {
+  opacity: 0.7;
+  font-size: clamp(0.7rem, 1rem, 1.5rem);
+}
+
+h1 {
+  font-size: clamp(1.5rem, 2rem, 2.5rem);
+  color: #1b1212;
+}
+
+#start-game-btn {
+  color: #ff9b71;
+  background-color: #fffd82;
+}
+
+#new-card-btn {
+  color: #fffd82;
+  background-color: #ff9b71;
+}
+
+body {
+  background-image: url("cats.png"),
+    radial-gradient(circle at right, #48304d 25%, #f865b0);
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  max-height: 50vh;
+  background-size: contain;
+  text-align: center;
+}
+
+.container {
+  margin: 3vh 6vw;
+}
+
+.btn-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 2.5vh;
+}
+
+.ace-box {
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.1);
+}
+
+#the-ace,
+#reset-btn {
+  visibility: hidden;
+}
+
+#ace1,
+#ace11 {
+  background-color: #e637bf;
+  color: #fffd82;
+  /* width: 40px;
+  height: auto; */
+  border-radius: 50%;
+}
+
+#ace1 {
+  padding: 0.25em 0.65em;
+}
+
+#ace11 {
+  padding: 0.25em 0.3em;
+}
+
+#ace1:hover,
+#ace1:focus,
+#ace11:hover,
+#ace11:focus {
+  transform: scale(1.2);
+}

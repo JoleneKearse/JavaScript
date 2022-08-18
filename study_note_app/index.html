@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/fc831cd623.js" crossorigin="anonymous"></script>
+    <title>Study Note Taking App</title>
+</head>
+<body>
+    <div class="options">
+        <div class="custom-select">
+            <select name="font-family" id="fontFamilyEl" onchange="changeFont(this)">
+                <optgroup label="Font:">
+                    <option value="Georgia" selected="selected">Georgia</option>
+                    <option value="Arial">Arial</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Monospace">Monospace</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="custom-select">
+            <select name="font-size" id="fontSizeEl" onchange="changeSize(this.value)">
+                <optgroup label="Size:">
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="24">24</option>
+                    <option value="26">26</option>
+                    <option value="28">28</option>
+                    <option value="36">36</option>
+                    <option value="42">37</option>
+                    <option value="72">38</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <input type="color" name="color" id="colorEl" value="#B486AB">
+
+        <i class="option-btn fa-solid fa-bold" id="boldBtn"></i>
+
+        <i class="option-btn fa-solid fa-italic" id="italicBtn"></i>
+
+        <i class="option-btn fa-solid fa-underline" id="underlineBtn"></i>
+
+        <i class="option-btn fa-solid fa-indent" id="indentBtn"></i>
+
+        <i class="option-btn fa-solid fa-list-ol" id="orderedListBtn"></i>
+
+        <i class="option-btn fa-solid fa-list" id="unorderedListBtn"></i>
+
+        <i class="option-btn fa-solid fa-link" id="linkBtn"></i>
+    </div>
+
+    
+    <div class="editor" contenteditable="true">
+        <template><span id="selectedTxt"></span></template>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

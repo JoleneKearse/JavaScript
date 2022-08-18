@@ -1,0 +1,104 @@
+/* ---------- CUSTOM PROPERTIES ---------- */
+:root {
+    --clr-white: #F8F4E3;
+    --clr-grey: #706C61;
+    --clr-black: #2A2B2A;
+    --clr-accent1: #B486AB;
+    --clr-accent2: #A40E4C;
+}
+
+/* ---------- RESET ---------- */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #F8F4E3, #706C61 50%, #2A2B2A);
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a,
+button,
+optgroup,
+option, 
+select,
+input {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+select {
+    background-color: var(--clr-accent1);
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input {
+    font-size: 1rem;
+    line-height: .6;
+}
+
+input[type=color] {
+    border-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 2em;
+}
+
+::-webkit-color-swatch,
+::-moz-color-swatch {
+    border-color: transparent;
+    border-radius: 50%;
+    width: 2em;
+}
+
+a {
+    text-decoration: #A40E4C;
+}
+
+
+
+/* ---------- COMPONENTS ---------- */
+.options {
+    display: flex;
+    justify-content: space-between;
+    min-width: 60vw;
+    width: 70%;
+    margin-inline: auto;
+    margin-top: .5em;
+}
+
+i:hover,
+i:focus {
+    cursor: pointer;
+    color: var(--clr-accent2);
+    text-shadow: 1px 1px 2px var(--clr-grey);
+}
+
+.active {
+    color: var(--clr-accent1);
+}
+
+.editor {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    width: 90vw;
+    min-height: 90vh;
+    margin: 2em;
+    margin-inline: auto;
+    padding: .5em 2em;
+}
+
+.editor:focus,
+.editor:hover,
+.editor:active {
+    outline: 3px solid var(--clr-accent1);
+}

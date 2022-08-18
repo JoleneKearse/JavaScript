@@ -1,8 +1,8 @@
 :root {
     --accent-yellow: #F1D302;
     --accent-red: #E2294F;
-    --btn-background: #b1ffbb;
-    --btn-color: #003a00;
+    --green-light: #b1ffbb;
+    --green-dark: #003a00;
 }
 
 /* ---------  RESET  --------- */
@@ -12,14 +12,16 @@
   box-sizing: border-box;
 }
 
-html {
+html, 
+body {
   margin: 0 auto;
   padding: 0;
   height: 100vh;
+  max-width: 100%;
 }
 
 img {
-  max-width: 98%;
+  max-width: 100%;
   display: block;
 }
 
@@ -36,15 +38,21 @@ body {
 }
 
 h1 {
-    font-size: clamp(1rem, 5rem, 10rem);
+    font-size: clamp(1.5rem, 3.5rem, 6rem);
     color: var(--accent-yellow);
 }
 
 .message {
-    font-size: clamp(2.4rem, 2.9rem, 4.5rem);
+    font-size: clamp(1.2rem, 2.5rem, 3rem);
     font-style: bold;
     font-weight: 400;
     color: var(--accent-red);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.results-box {
+  color: var(--green-light);
 }
 
 /* -------- LAYOUT -------- */
@@ -53,13 +61,17 @@ body {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
+    padding: 0 3em;
 }
 
 .container {
     padding: 1em .5em;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 /* -------- COMPONENTS-------- */
@@ -75,27 +87,46 @@ body {
 
 button {
     width: 45vw;
-    padding: .5em .5em;
+    padding: .5em .3em;
     border: none;
     border-radius: 20px;
-    background-color: var(--btn-background);
-    color: var(--btn-color);
+    background-color: var(--green-light);
+    color: var(--green-dark);
     font-weight: 400;
-    font-size: clamp(2rem, 2.5rem, 4rem);
+    font-size: clamp(1.5rem, 2rem, 3.5rem);
     cursor: pointer;
+    transition: background-color 1s, box-shadow 1s;
 }
 
 button:focus,
 button:hover {
-    background-color: var(--btn-color);
-    color: var(--btn-background);
+    background-color: var(--green-dark);
+    color: var(--green-light);
 }
 
 button:active {
-  outline: none;
   box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
   -webkit-box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
   -moz-box-shadow: 6px 7px 10px 5px rgba(25,25,25,0.26);
   margin: 2px 5px 1px 5px;
-  transition: 100ms;
+  outline: none;
+}
+
+.ace {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(1, 1fr);
+  gap: .5em;
+  visibility: hidden;
+}
+
+.ace > button {
+  border-radius: 10px;
+  background-color: var(--accent-red);
+  color: var(--accent-yellow);
+  font-weight: 300;
+}
+
+.ace > button > span {
+  font-weight: 800;
 }
